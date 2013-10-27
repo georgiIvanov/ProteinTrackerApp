@@ -14,13 +14,15 @@
 		FFB558E1181D21EB005B5233 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB558E0181D21EB005B5233 /* main.m */; };
 		FFB558E5181D21EB005B5233 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB558E4181D21EB005B5233 /* AppDelegate.m */; };
 		FFB558E8181D21EB005B5233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB558E6181D21EB005B5233 /* Main.storyboard */; };
-		FFB558EB181D21EB005B5233 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB558EA181D21EB005B5233 /* ViewController.m */; };
+		FFB558EB181D21EB005B5233 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB558EA181D21EB005B5233 /* MainViewController.m */; };
 		FFB558ED181D21EB005B5233 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB558EC181D21EB005B5233 /* Images.xcassets */; };
 		FFB558F4181D21EB005B5233 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB558F3181D21EB005B5233 /* XCTest.framework */; };
 		FFB558F5181D21EB005B5233 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB558D4181D21EB005B5233 /* Foundation.framework */; };
 		FFB558F6181D21EB005B5233 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB558D8181D21EB005B5233 /* UIKit.framework */; };
 		FFB558FE181D21EC005B5233 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFB558FC181D21EC005B5233 /* InfoPlist.strings */; };
 		FFB55900181D21EC005B5233 /* ProteinTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB558FF181D21EC005B5233 /* ProteinTrackerTests.m */; };
+		FFB5590B181D2D01005B5233 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB5590A181D2D01005B5233 /* HistoryViewController.m */; };
+		FFB5590D181D51CD005B5233 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FFB5590C181D51CD005B5233 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,17 @@
 		FFB558E3181D21EB005B5233 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFB558E4181D21EB005B5233 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FFB558E7181D21EB005B5233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FFB558E9181D21EB005B5233 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FFB558EA181D21EB005B5233 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFB558E9181D21EB005B5233 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FFB558EA181D21EB005B5233 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		FFB558EC181D21EB005B5233 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FFB558F2181D21EB005B5233 /* ProteinTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProteinTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB558F3181D21EB005B5233 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FFB558FB181D21EC005B5233 /* ProteinTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProteinTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		FFB558FD181D21EC005B5233 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FFB558FF181D21EC005B5233 /* ProteinTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProteinTrackerTests.m; sourceTree = "<group>"; };
+		FFB55909181D2D01005B5233 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		FFB5590A181D2D01005B5233 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		FFB5590C181D51CD005B5233 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +120,13 @@
 				FFB558E3181D21EB005B5233 /* AppDelegate.h */,
 				FFB558E4181D21EB005B5233 /* AppDelegate.m */,
 				FFB558E6181D21EB005B5233 /* Main.storyboard */,
-				FFB558E9181D21EB005B5233 /* ViewController.h */,
-				FFB558EA181D21EB005B5233 /* ViewController.m */,
+				FFB5590C181D51CD005B5233 /* Settings.bundle */,
+				FFB558E9181D21EB005B5233 /* MainViewController.h */,
+				FFB558EA181D21EB005B5233 /* MainViewController.m */,
 				FFB558EC181D21EB005B5233 /* Images.xcassets */,
 				FFB558DB181D21EB005B5233 /* Supporting Files */,
+				FFB55909181D2D01005B5233 /* HistoryViewController.h */,
+				FFB5590A181D2D01005B5233 /* HistoryViewController.m */,
 			);
 			path = ProteinTracker;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB5590D181D51CD005B5233 /* Settings.bundle in Resources */,
 				FFB558ED181D21EB005B5233 /* Images.xcassets in Resources */,
 				FFB558DF181D21EB005B5233 /* InfoPlist.strings in Resources */,
 				FFB558E8181D21EB005B5233 /* Main.storyboard in Resources */,
@@ -249,9 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB558EB181D21EB005B5233 /* ViewController.m in Sources */,
+				FFB558EB181D21EB005B5233 /* MainViewController.m in Sources */,
 				FFB558E5181D21EB005B5233 /* AppDelegate.m in Sources */,
 				FFB558E1181D21EB005B5233 /* main.m in Sources */,
+				FFB5590B181D2D01005B5233 /* HistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
